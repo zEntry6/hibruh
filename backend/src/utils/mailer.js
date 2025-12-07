@@ -2,7 +2,7 @@ const https = require('https');
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const RESEND_FROM =
-  process.env.RESEND_FROM || 'H!BRUH <onboarding@resend.dev>';
+  process.env.RESEND_FROM || 'H!BRUH <no-reply@hibruh.xyz>';
 
 if (!RESEND_API_KEY) {
   console.warn(
@@ -152,3 +152,4 @@ module.exports = {
   sendPasswordResetEmail,
   sendEmailVerification
 };
+
